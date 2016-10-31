@@ -241,16 +241,16 @@ function! MakeTexFolds(force)
 	" }}}
 
 	" {{{ items
-	if g:Tex_FoldedMisc =~ '\<item\>'
-		call AddSyntaxFoldItem (
-			\ '^\s*\\item',
-			\ '^\s*\\item\|^\s*\\end{\(enumerate\|itemize\|description\)}',
-			\ 0,
-			\ -1,
-			\ '^\s*\\begin{\(enumerate\|itemize\|description\)}',
-			\ '^\s*\\end{\(enumerate\|itemize\|description\)}'
-			\ )
-	endif
+	" if g:Tex_FoldedMisc =~ '\<item\>'
+	" 	call AddSyntaxFoldItem (
+	" 		\ '^\s*\\item',
+	" 		\ '^\s*\\item\|^\s*\\end{\(enumerate\|itemize\|description\)}',
+	" 		\ 0,
+	" 		\ -1,
+	" 		\ '^\s*\\begin{\(enumerate\|itemize\|description\)}',
+	" 		\ '^\s*\\end{\(enumerate\|itemize\|description\)}'
+	" 		\ )
+	" endif
 	" }}}
 
 	" {{{ title
