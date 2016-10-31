@@ -563,7 +563,7 @@ TexLet g:Tex_SmartKeyDot = 0
 "       2. <<M-l>       \langle\rangle
 "       3. q<M-l>       \lefteqn{}
 "     otherwise insert  \label{}
-" <M-i> inserts \item commands at the current cursor location depending on
+" <M-o> (instead of <M-i>=é) inserts \item commands at the current cursor location depending on
 "       the surrounding environment. For example, inside itemize, it will
 "       insert a simple \item, but within a description, it will insert
 "       \item[<+label+>] etc.

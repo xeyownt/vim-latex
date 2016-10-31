@@ -946,7 +946,8 @@ inoremap <script> <silent> <Plug>Tex_InsertItemOnNextLine <ESC>o<C-R>=Tex_Insert
 
 function! Tex_SetItemMaps()
 	if !hasmapto("<Plug>Tex_InsertItemOnThisLine", "i")
-		imap <buffer> <M-i> <Plug>Tex_InsertItemOnThisLine
+		imap <buffer> <M-o> <Plug>Tex_InsertItemOnThisLine
+		set <M-o>=o
 	endif
 	if !hasmapto("<Plug>Tex_InsertItemOnNextLine", "i")
 		imap <buffer> <C-CR> <Plug>Tex_InsertItemOnNextLine
